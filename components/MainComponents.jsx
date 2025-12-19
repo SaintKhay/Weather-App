@@ -12,7 +12,7 @@ export default function MainComponent() {
   const currentData = data.current;
   const currentDataUnit = data.current_units;
   const date = new Date(currentData.time).toDateString();
-
+  console.log(location);
   return (
     <main>
       <section className="container">

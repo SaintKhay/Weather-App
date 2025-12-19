@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { handleImageSrc } from "./apiUrl";
-import { formatDate } from "./apiUrl";
+import { handleImageSrc } from "../apiUrl";
+import { formatDate } from "../apiUrl";
+import styles from "./aside.module.css";
 
 export default function Aside(props) {
   //Get hourly temperature and time data
@@ -35,14 +36,16 @@ export default function Aside(props) {
           getCurrTimeIndex + 8
         )
       : [];
-  console.log(props);
+  // console.log(props);
 
   return (
     <aside>
-      <div className="side-container">
-        <span className="side-sub-container">
-          <p className="hourly-forecast forcast-text">Hourly forecast</p>
-          <select className="'unit-feature" name="feature">
+      <div className={styles.sideContainer}>
+        <span className={styles.sideSubContainer}>
+          <p className={` ${styles.hourlyForecast} ${styles.forcastText}`}>
+            Hourly forecast
+          </p>
+          <select className={styles.unitFeature} name="feature">
             {formatDate(props.data.time).map((day, index) => (
               <option key={index} value="">
                 {day}
@@ -51,7 +54,7 @@ export default function Aside(props) {
           </select>
         </span>
 
-        <ul className="aside-sub-container">
+        <ul className={styles.asideSubContainer}>
           {next8hours.map((data, index) => (
             <li key={index}>
               <span>
@@ -60,9 +63,9 @@ export default function Aside(props) {
                   src={handleImageSrc(temp[index])}
                   alt="Weather"
                 />
-                <p className="aside-time">{data}</p>
+                <p className={styles.asideTime}>{data}</p>
               </span>
-              <p className="aside-temp">{Math.round(temp[index])}°</p>
+              <p className={styles.asideTemp}>{Math.round(temp[index])}°</p>
             </li>
           ))}
         </ul>

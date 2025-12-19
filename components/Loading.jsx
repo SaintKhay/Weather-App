@@ -1,5 +1,5 @@
 import PrimaryHeader from "./PrimaryHeader";
-import Aside from "./Aside";
+import Aside from "./Aside/Aside";
 import React from "react";
 import loadIcon from "../assets/images/icon-loading.svg";
 import { formatDate, handleImageSrc } from "./apiUrl";

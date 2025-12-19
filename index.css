@@ -18,6 +18,7 @@ body {
   padding: 7rem;
   font-size: 16px;
   overflow-x: hidden;
+  transition: all 0.3s ease-in;
 }
 
 .container {
@@ -184,12 +185,10 @@ input::placeholder {
 }
 .location {
   font-size: 3.4rem;
-  font-family: "DM Sans", sans-serif;
   color: #fff;
   font-weight: 600;
 }
 .date-time {
-  font-family: "DM Sans", sans-serif;
   color: #fff;
   font-weight: 400;
   font-size: 2rem;
@@ -247,7 +246,6 @@ input::placeholder {
 }
 
 .forcast-text {
-  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   padding-bottom: 1.4rem;
   font-size: 2.4rem;
@@ -273,72 +271,10 @@ input::placeholder {
   font-size: 8.4rem;
 }
 .temps {
-  font-family: "DM Sans", sans-serif;
   display: flex;
   justify-content: space-between;
 }
 
-/* ASIDE */
-
-.side-container {
-  padding: 2.4rem 3.2rem;
-  background-color: #272541;
-  height: 100%;
-  border-radius: 20px;
-}
-
-.side-container span {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.side-sub-container {
-  justify-content: space-between;
-  padding-bottom: 2rem;
-}
-
-.hourly-forecast {
-  font-size: 2rem;
-  padding-bottom: 0;
-}
-
-.aside-sub-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.aside-sub-container li {
-  padding: 0rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid hsla(252, 6%, 84%, 0.062);
-  margin-bottom: 1.6rem;
-  border-radius: 10px;
-}
-
-.aside-sub-container li:last-child {
-  margin-bottom: 0;
-}
-.aside-time {
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: hsl(250, 6%, 84%);
-}
-
-li span {
-  display: flex;
-  font-family: "DM Sans", sans-serif;
-  /* gap: 2rem; */
-  font-size: 3rem;
-  align-items: center;
-}
-.weather-code {
-  font-size: 3.2rem;
-  align-self: flex-end;
-}
 .grid {
   display: grid;
   gap: 20px;
@@ -346,12 +282,6 @@ li span {
   align-items: stretch;
   padding: 6.8rem 0;
 }
-
-.aside-temp {
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
 /* API ERROR STYLE */
 .api-error {
   width: 60%;

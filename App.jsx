@@ -9,7 +9,7 @@ export default function App() {
       <Header />
       {/* <Loading /> */}
       {/* <ApiError /> */}
-      {/* <PrimaryHeader />*/}
+      <PrimaryHeader />
       <MainComponent />
     </>
   );

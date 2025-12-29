@@ -5,7 +5,6 @@ import Forecast from "./Forecast";
 import bigImage from "../assets/images/bg-today-large.svg";
 import smallImage from "../assets/images/bg-today-small.svg";
 import dataSet from "./hooks";
-import Loading from "./Loading";
 
 export default function MainComponent() {
   const { data, location, loading } = dataSet();
@@ -15,8 +14,6 @@ export default function MainComponent() {
   const date = new Date(currentData.time).toDateString();
   console.log(data);
 
-  // if (loading) return <Loading />;
-  // else
   return (
     <main>
       <section className="container">

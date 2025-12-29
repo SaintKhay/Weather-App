@@ -10,8 +10,13 @@ export default function App() {
     <>
       <Header />
       <PrimaryHeader />
-      {/* {loading ? <Loading /> : <MainComponent />} */}
-      <Loading />
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className="fade-in">
+          <MainComponent />
+        </div>
+      )}
     </>
   );
 }

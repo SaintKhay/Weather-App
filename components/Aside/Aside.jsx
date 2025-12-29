@@ -56,7 +56,7 @@ export default function Aside(props) {
 
         <ul className={styles.asideSubContainer}>
           {next8hours.map((data, index) => (
-            <li key={index}>
+            <li key={index} className="fade-in">
               <span>
                 <img
                   className="hourly-weather"

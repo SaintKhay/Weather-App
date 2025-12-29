@@ -330,24 +330,30 @@ input::placeholder {
 }
 /* Loading state */
 
-.main-display-sec {
-  text-align: center;
-  background-color: #3d3b5e;
-  border-radius: 20px;
-  padding: 20rem;
-  margin-bottom: 5.4rem;
-}
-.loading-icon {
-  width: 5%;
+.load-icon {
+  animation: spin 1.6s linear infinite;
+  width: 7%;
 }
 .load-text {
-  font-size: 3.6rem;
+  font-size: 4.4rem;
   text-align: center;
 }
-.loading-container-head {
+.loading-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 14rem;
 }
-
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* Media Queries */
 @media (max-width: 64em) {
   .primary-heading {
@@ -482,5 +488,8 @@ input::placeholder {
   }
   .aside-sub-container li {
     padding: 0rem 1rem;
+  }
+  .load-icon {
+    width: 15%;
   }
 }

@@ -6,10 +6,10 @@ import ApiError from "./components/Apierror";
 export default function App() {
   return (
     <>
+      <Header />
       {/* <Loading /> */}
       {/* <ApiError /> */}
-      <Header />
-      <PrimaryHeader />
+      {/* <PrimaryHeader />*/}
       <MainComponent />
     </>
   );

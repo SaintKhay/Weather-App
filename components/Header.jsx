@@ -1,19 +1,13 @@
-import React from "react";
+import logo from "./../assets/images/logo.svg";
 
 export default function Header() {
-  const markUp = React.useState({
-    text: "Temperature",
-    measurement: "Celsius",
-    unit: "(°C)",
-  });
-
   const celciusUnit = "(°C)";
   const fahUnit = "(°F)";
   return (
     <header className="header">
       <nav>
         <div className="logo-container">
-          <img src="assets/images/logo.svg" alt="logo" />
+          <img src={logo} alt="logo" />
         </div>
 
         <div className="dropdown">

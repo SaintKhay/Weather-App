@@ -21,9 +21,9 @@ export function handleImageSrc(temp) {
   if (temp < 0) return snow;
   else if (temp >= 0 && temp < 10) return rain;
   else if (temp >= 11 && temp < 18) return drizzle;
-  else if (temp >= 19 && temp < 25) return overcast;
-  else if (temp >= 25 && temp < 32) return partlycloudy;
-  else if (temp >= 32) return sunny;
+  else if (temp >= 19 && temp < 29) return overcast;
+  else if (temp >= 29 && temp < 33) return partlycloudy;
+  else if (temp >= 33) return sunny;
 }
 export function formatDate(date) {
   return date
